@@ -38,9 +38,9 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('🎬 Channel', url='https://t.me/Film_Arcade_Official'),
-            InlineKeyboardButton('♀️ Group', url='https://t.me/Film_Arcade_Chat')
+            InlineKeyboardButton('♥️ Group', url='https://t.me/Film_Arcade_Chat')
             ],[
-            InlineKeyboardButton('⭕ About', callback_data='about')
+            InlineKeyboardButton('☣️ About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -76,9 +76,9 @@ async def start(client, message):
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
             InlineKeyboardButton('🎬 Channel', url='https://t.me/Film_Arcade_Official'),
-            InlineKeyboardButton('♀️ Group', url='https://t.me/Film_Arcade_Chat')
+            InlineKeyboardButton('♥️ Group', url='https://t.me/Film_Arcade_Chat')
             ],[
-            InlineKeyboardButton('⭕ About', callback_data='about')
+            InlineKeyboardButton('☣️ About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
