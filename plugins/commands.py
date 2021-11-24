@@ -40,7 +40,7 @@ async def start(client, message):
             InlineKeyboardButton('🎬 Channel', url='https://t.me/Film_Arcade_Official'),
             InlineKeyboardButton('♥️ Group', url='https://t.me/Film_Arcade_Chat')
             ],[
-            InlineKeyboardButton('☣️ About', callback_data='about')
+            InlineKeyboardButton('⚠️ About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -59,13 +59,13 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "🔸 Channel 🔸", url=invite_link.invite_link
                 )
             ]
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
+            btn.append([InlineKeyboardButton(" ♻️ Try Again", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**Please Join My Updates Channel to use this Bot!**",
@@ -78,7 +78,7 @@ async def start(client, message):
             InlineKeyboardButton('🎬 Channel', url='https://t.me/Film_Arcade_Official'),
             InlineKeyboardButton('♥️ Group', url='https://t.me/Film_Arcade_Chat')
             ],[
-            InlineKeyboardButton('☣️ About', callback_data='about')
+            InlineKeyboardButton('⚠️ About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
